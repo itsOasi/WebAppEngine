@@ -1,0 +1,86 @@
+{
+    "meta":{    
+        "title":"Woah Broski"
+    },
+    "relation":{
+        "adjacent":[],
+        "transition":[],
+        "extras":{
+            "stylesheets":[
+                "static/style.css"
+            ],
+            "scripts":[]
+        }
+    },
+    "service_workers":[
+        "cache.js"
+    ],
+    "components":{
+        "header":{
+            "type":"component",
+            "id":"header",
+            "style":{
+                "background-color":"#00000055",
+                "padding":"0vh"
+            },
+            "content":{
+                ".title":{
+                    "text":"Welcome to WAE"
+                }
+            },
+            "folder":["innova_basic/basic_header"],
+            "children":["nav"]
+        },
+        "main":{
+            "id":"main",
+            "type":"vbox",
+            "children":[
+                "intro",
+                "log"
+            ]
+        },
+        "intro":{
+            "type":"component",
+            "id":"intro",
+            "folder":"innova_basic/basic_section",
+            "content":{
+                ".title":{
+                    "text": "DO YOU KNOW DA WAE!?"
+                },
+                ".sub":{
+                    "text": "itsOasi's Web App Engine"
+                },
+                ".desc":{
+                    "text": "Make any web app you can imagine, the way you imagined it!"
+                }
+            }
+        },
+        "log":{
+            "type":"component",
+            "id":"log",
+            "folder":"special/visual_log",
+            "tags":["script"]
+        },
+        "nav":{
+            "type":"component",
+            "id":"nav",
+            "folder":"innova_basic/basic_nav",
+            "style":{
+                "position": "fixed",
+                "line-height": "3em",
+                "width": "max-content",
+                "max-width": "30%",
+                "height": "min-content",
+                "max-height": "80%",
+                "left": "0%",
+                "top": "5em",
+                "padding": "2em",
+                "border-radius": "0em 0em 1em 1em",
+                "background-color":"#00000055",
+                "z-index": "3",
+                "display": "none"
+            },
+            "tags":["script", "hidden"]
+        }
+    }
+}
