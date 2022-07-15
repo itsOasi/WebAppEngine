@@ -9,7 +9,7 @@ $(async function(){
   }
 
   // load the exhibit corresponding to the url
-  await exhibit.load("static/exhibits/"+url, $("#exb"));
+  await exhibit.load("import/static/exhibits/"+url, $("#exb"));
   // make sure your exhibit names ^^^ match the url names
   exhibit.install_service_workers();
 
