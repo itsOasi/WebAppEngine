@@ -1,7 +1,7 @@
-# ```static``` branch
+# ```import``` branch
 ---
 
-The ```static``` branch contains all information for project specific appearance and functionality.
+The ```import``` branch contains all information for project specific appearance and functionality.
 
 ## Deployment
 ---
